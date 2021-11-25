@@ -73,6 +73,22 @@ public class BinaryTreePreorderTraversal {
         return res;
     }
 
+//    public List<Integer> preorderTraversal(TreeNode root) {
+//        //前序遍历 方法2：迭代
+//        List<Integer> res = new ArrayList<>();
+//        Deque<TreeNode> stack = new LinkedList<>();
+//        if (root == null) return res;
+//        stack.push(root);
+//        while (!stack.isEmpty()) {
+//            TreeNode cur = stack.pop();
+//            res.add(cur.val);
+//            //前序遍历root-left-right 故先压右边再压左边
+//            if (cur.right != null) stack.push(cur.right);
+//            if (cur.left != null) stack.push(cur.left);
+//        }
+//        return res;
+//    }
+
     //Definition for a binary tree node
     public class TreeNode {
         int val;
