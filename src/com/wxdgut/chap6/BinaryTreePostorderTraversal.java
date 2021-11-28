@@ -1,4 +1,4 @@
-package com.wxdgut.chap4;
+package com.wxdgut.chap6;
 
 import java.util.ArrayList;
 import java.util.Deque;

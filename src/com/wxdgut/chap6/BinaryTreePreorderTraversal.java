@@ -1,4 +1,4 @@
-package com.wxdgut.chap4;
+package com.wxdgut.chap6;
 
 import sun.plugin.javascript.navig.Link;
 
