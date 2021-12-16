@@ -42,7 +42,6 @@ public class Subsets {
 //    public List<List<Integer>> subsets(int[] nums) {
 //        //方法2：递归
 //        List<List<Integer>> res = new ArrayList<>();
-//        boolean[] used = new boolean[nums.length];
 //        dfs(res, new ArrayList<>(), 0, nums);
 //        return res;
 //    }
