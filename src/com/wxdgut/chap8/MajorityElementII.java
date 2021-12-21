@@ -140,8 +140,8 @@ public class MajorityElementII {
 ////            else map.put(n, map.get(n) + 1);
 ////        }
 //        for (int n : nums) map.put(n, map.getOrDefault(n, 0) + 1);
-//        for (int x : map.keySet()) {
-//            if (map.get(x) > nums.length / 3) res.add(x);
+//        for (int res : map.keySet()) {
+//            if (map.get(res) > nums.length / 3) res.add(res);
 //        }
 //        return res;
 //    }
