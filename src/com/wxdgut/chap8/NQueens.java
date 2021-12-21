@@ -44,6 +44,7 @@ public class NQueens {
 
     public List<List<String>> solveNQueens(int n) {
         //方法1：回溯 时间复杂度O(n!) 1ms
+        //用变量col[*] = sub[*] = main[*]来表示3条虚拟的线，线所指的区域不可放
         char[][] arr = new char[n][n]; //棋盘
         //记录某一列是否放置了皇后
         boolean col[] = new boolean[n];
@@ -75,6 +76,9 @@ public class NQueens {
             }
             arr[row][i] = 'Q';
             //（横坐标-纵坐标）的值固定，+(n - 1)是为了补全数组索引，使其可以正常使用
+            //n=4，arr[0][0]= 'Q'时，sub[0]= true, main[3]= true,画2条线，线内不可放
+            //n=4，arr[0][0]= 'Q',arr[1][2]= 'Q'时，
+            //sub[0],sub[3]= true, main[3],main[4]= true,画4条线，线内不可放
             col[i] = sub[i + row] = main[i - row + n - 1] = true;
             dfs(n, arr, row + 1, col, main, sub);
             col[i] = sub[i + row] = main[i - row + n - 1] = false;
